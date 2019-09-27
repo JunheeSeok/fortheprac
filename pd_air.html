@@ -1,0 +1,120 @@
+<table width="671" border="0" cellspacing="0" cellpadding="0">
+        <tbody><tr>
+          <td width="11">&nbsp;</td>
+        <td width="660">
+          <table width="660" border="0" cellspacing="0" cellpadding="0">
+            <tbody><tr>
+              <td background="../../images/sub_net_titbg.gif"><table width="660" border="0" cellpadding="0" cellspacing="0">
+                <tbody><tr>
+                  <td width="231"><img src="images/sub_real_tit002.gif" alt="항공기 출/도착현황" width="137" height="45"></td>
+                    <td align="right"><br></td>
+                  </tr>
+                </tbody></table></td>
+            </tr>
+            <tr>
+              <td><img src="../../images/dot_10.gif" width="10" height="10"></td>
+            </tr>
+            <tr>
+              <td align="center">
+			  <table width="648" border="0" cellpadding="0" cellspacing="0">
+                <tbody><tr>
+                  <td><img src="../../images/recr_table_img01.gif" width="660" height="17"></td>
+                </tr>
+                <tr>
+                  <td align="center" background="../../images/recr_table_img02.gif"><!--------스케줄검색시작//////////// ------->
+
+					<table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+                      <tbody><tr>
+ 			           <td width="11">&nbsp;</td>
+ 			            <td height="28"><img src="../../images/bske01.gif" width="12" height="9">구&nbsp;&nbsp;분
+							<input type="radio" name="depArr" value="A" checked="" onclick="javascript:chgTitle();">도착
+							<input type="radio" name="depArr" value="D" onclick="javascript:chgTitle();">출발
+						  </td>
+                        <td>
+                       <img src="../../images/bske01.gif" width="12">날&nbsp;&nbsp;&nbsp;짜&nbsp;&nbsp;
+                        <input type="text" value="2019-09-27" name="current_date" id="current_date" maxlength="12" size="12" class="hasDatepicker">
+                        <a href="#"><img src="../../images/bske02.gif" onclick="$('#current_date').focus();" width="19" height="19" border="0" align="absmiddle"></a>
+						</td>
+						
+						 <td colspan="2" height="28"><img src="../../images/bske01.gif" width="12" height="9">공&nbsp;&nbsp;항<span style="padding-top:1px;">
+                          <select name="airport" onchange="go_search()" style="font-size:12px; height:20px; background-color:#ffffff; width:90px;">
+					  <option value="RKSI">인천</option><option value="RKSS">김포</option><option value="RKTU">청주</option><option value="RKNY">양양</option><option value="RKJK">군산</option><option value="RKNW">원주</option><option value="RKPK">김해</option><option value="RKPC">제주</option><option value="RKTN">대구</option><option value="RKJJ">광주</option><option value="RKJY">여수</option><option value="RKPU">울산</option><option value="RKTH">포항</option><option value="RKPS">사천</option><option value="RKJB">무안</option>                          
+					  
+                        </select></span></td>
+
+			         </tr>
+			         <tr>   
+                        <td width="11">&nbsp;</td>  
+
+                        <td colapsn="2"><img src="../../images/bske01.gif" width="12" height="9">항공사&nbsp;&nbsp;<span style="padding-top:1px;">
+                          <select name="al_icao" onchange="go_search()" style="font-size:12px; height:20px; background-color:#ffffff; width:120px;">
+					  <option value="">전체</option>
+					  <option value="KAL">대한항공</option><option value="AAR">아시아나항공</option><option value="ABL">에어부산</option><option value="ASV">에어서울</option><option value="AIH">에어인천</option><option value="KAB">에어포항</option><option value="APZ">에어프레미아</option><option value="APV">에어필립</option><option value="ATZ">에이스항공</option><option value="ESR">이스타항공</option><option value="JJA">제주항공</option><option value="JNA">진에어</option><option value="TWB">티웨이항공</option><option value="FGW">플라이강원</option><option value="ARK">아르메니아</option><option value="VNL">바닐라 에어</option><option value="WAJ">에어아시아재팬</option><option value="AJX">에어재팬화물항공</option><option value="JAL">일본항공</option><option value="NCA">일본화물항공</option><option value="ANA">전일본항공</option><option value="APJ">피치항공</option><option value="HDA">드래곤에어</option><option value="CBJ">북경수도항공</option><option value="CSC">사천항공</option><option value="CDG">산동항공</option><option value="CSH">상해항공</option><option value="YZR">수파르나항공</option><option value="CSS">순풍항공</option><option value="CSZ">심천항공</option><option value="AHK">에어홍콩화물항공</option><option value="GWL">장성항공</option><option value="CYZ">중국 우정항공</option><option value="CCA">중국국제항공</option><option value="CSN">중국남방항공</option><option value="CES">중국동방항공</option><option value="EPA">중국동하이 항공</option><option value="CKK">중국화운항공</option><option value="GCR">천진에어라인</option><option value="QDA">청도항공</option><option value="CQH">춘추항공</option><option value="CXA">하문항공</option><option value="CHH">해남항공</option><option value="HKE">홍콩익스프레스</option><option value="CRK">홍콩항공</option><option value="MDA">만다린 항공</option><option value="FEA">원동항공</option><option value="UIA">유니항공(立榮)</option><option value="EVA">장영항공(長榮)</option><option value="CAL">중화항공</option><option value="LAO">라오항공</option><option value="AMU">에어마카오</option><option value="MAS">말레이시아항공</option><option value="MXD">말린도항공</option><option value="XAX">에어아시아 엑스</option><option value="MMA">미얀마국제항공</option><option value="BAV">뱀부항공</option><option value="HVN">베트남항공</option><option value="VJC">비엣제트 항공</option><option value="PIC">젯스타퍼시픽항공</option><option value="BTN">부탄항공</option><option value="TGW">스쿠트타이거</option><option value="SLK">실크에어</option><option value="SQC">싱가포르 항공 카고</option><option value="SIA">싱가폴항공</option><option value="GIA">가루다인도네시아</option><option value="LNI">라이온 항공</option><option value="SWM">스카이앙코르항공</option><option value="KHV">캄보디아앙코르항공</option><option value="PMT">프로그래스멀티항공</option><option value="BCC">비즈니스에어</option><option value="SKT">스카이스타</option><option value="AAQ">아시아아틀란틱항공</option><option value="TAX">타이에어아시아엑스</option><option value="THA">타이항공</option><option value="VAP">푸켓항공</option><option value="CEB">세부퍼시픽항공</option><option value="GAP">팔익스프레스</option><option value="AAV">팬퍼시픽항공</option><option value="EZD">필리핀에어아시아</option><option value="APG">필리핀에어아시아</option><option value="PAL">필리핀항공</option><option value="RBA">브루나이항공</option><option value="AMX">아에로멕시코</option><option value="CIU"> H/AGT 크라셀</option><option value="NCR">내셔널 항공</option><option value="DYA">다이나믹항공</option><option value="DAL">델타항공</option><option value="SOO">서던화물항공</option><option value="AAL">아메리칸항공</option><option value="GTI">아틀라스화물항공</option><option value="EIA">에버그린화물항공</option><option value="WGN">웨스턴글로벌항공</option><option value="UAL">유나이티드항공</option><option value="UPS">유피에스화물항공</option><option value="GGC">카고360</option><option value="CKS">칼리타화물항공</option><option value="COA">컨티넨탈항공</option><option value="CMI">콘티넨탈 마이크로네시아</option><option value="FDX">페덱스화물항공</option><option value="PAC">폴라에어카고 월드와이드</option><option value="HAL">하와이안항공</option><option value="ACA">에어캐나다</option><option value="KLM">네덜란드항공</option><option value="DLH">독일항공</option><option value="GEC">독일화물항공</option><option value="ACX">독일화물항공</option><option value="BOX">에어로로직</option><option value="CLX">카고룩스화물항공</option><option value="BAW">영국항공</option><option value="CLU">카고로직에어</option><option value="CPA">캐세이퍼시픽항공</option><option value="AUA">오스트리아항공</option><option value="CSW">실크웨이 이탈리아</option><option value="AZA">알이탈리아항공</option><option value="CSA">체코항공</option><option value="LOT">폴란드항공</option><option value="AFR">프랑스항공</option><option value="FIN">핀란드항공</option><option value="ACI">에어칼린</option><option value="QFA">콴타스항공</option><option value="KHB">달라비아/하바롭스크항공</option><option value="ESL">러시아스카이화물항공</option><option value="AFL">러시아항공</option><option value="VDA">볼가화물항공</option><option value="VLK">블라디보스톡항공</option><option value="SBI">시베리아 항공</option><option value="TUP">아비아스타 투 화물</option><option value="AZS">아비아콘지토트랜스</option><option value="VAS">아트란항공</option><option value="SYL">야쿠티아항공</option><option value="ABW">에어브리지카고</option><option value="ASE">에어스타즈에어라인항공</option><option value="SHU">오로라항공</option><option value="KJC">크라스노야르스크</option><option value="AZG">실크웨이웨스트</option><option value="AZQ">실크웨이항공</option><option value="UZB">우즈베키스탄항공</option><option value="ADB">안토노프항공</option><option value="EAA">에어비쉬켁</option><option value="KZR">에어아스타나항공</option><option value="LYN">알틴항공</option><option value="MEG">메가몰디브</option><option value="MML">몽골리안항공</option><option value="MGL">몽골항공</option><option value="MNG">에어로 몽골리아</option><option value="EZA">이즈니스항공</option><option value="MIX">미덱스항공</option><option value="UAE">에미레이트항공</option><option value="ETD">에티하드</option><option value="ACQ">아리안카고익스프레스</option><option value="AIC">에어인디아</option><option value="QTR">카타르항공</option><option value="THY">터키항공</option><option value="ETH">에티오피안항공</option><option value="te">2</option><option value="S2">2</option><option value="S11">211</option><option value="999">9999999999999999999999999</option><option value="ICL">C.A.L CARGO</option><option value="DER">DEER JET</option><option value="KBS">FIMS 테스트용도</option><option value="CWC">H/AGT 크라셀</option><option value="BIS">IRBIS</option><option value="MMZ">PEACH</option><option value="MMT">THOMASCOOK</option><option value="KZU">ULS 화물항공</option><option value="ULG">U에어라인</option><option value="CXP">Xtra Airways</option><option value="OXM">zndnpdlxm</option><option value="A T">개발실 테스트</option><option value="T+T">개발실+테스트</option><option value="A+T">개발실+테스트</option><option value="KOR">고려항공</option><option value="GSC">그랜드스타</option><option value="HO">길상항공</option><option value="RAA">네팔항공</option><option value="KAR">노드윈드</option><option value="NGB">노르딕글로벌항공</option><option value="NWA">노스웨스트항공</option><option value="NCT">녹스쿠트 항공</option><option value="ANZ">뉴질랜드항공</option><option value="KA">대한</option><option value="DMO">도모데도보화물항공</option><option value="RDA">라다항공</option><option value="LQQ">란메이항공</option><option value="LAN">란항공</option><option value="RAB">래이얀항공</option><option value="LKE">럭키항공</option><option value="RKH">로얄크메르항공</option><option value="CDC">룽에어</option><option value="DNU">리투아니아</option><option value="MEN">메나항공</option><option value="MAN">메르디안</option><option value="MAG">메르디안항공</option><option value="MLR">미힌랑카</option><option value="TNA">부흥항공</option><option value="BGH">불가리아</option><option value="VAX">브이에어</option><option value="VVM">비바마카오</option><option value="VJR">비엣제트 항공</option><option value="RBY">비전에어라인</option><option value="BRZ">사마라화물항공</option><option value="SVA">사우디아라비아항공</option><option value="UGP">샤 잉크</option><option value="SNJ">솔라시드</option><option value="ALK">스리랑카항공</option><option value="SKY">스카이마크항공</option><option value="CDV">스콜항공</option><option value="SJX">스타럭스 항공</option><option value="SFJ">스타플라이어항공</option><option value="AAG">슬로바키아</option><option value="SSG">슬로바키아</option><option value="SJM">시노 제트</option><option value="SCW">실크웨이이탈리아항공</option><option value="SGD">씨에어</option><option value="ABG">아바칸</option><option value="NVI">아비알엔브이</option><option value="AEU">아스트라이오스항공</option><option value="AAP">아스트로 에어</option><option value="MGE">아시아퍼시픽항공</option><option value="RCF">아에로플로트카고</option><option value="ICE">아이스란드에어</option><option value="AYZ">아트란타소유즈화물</option><option value="AKW">앙코르항공</option><option value="APW">애로우항공</option><option value="LZR">에어 라쥬르</option><option value="ISS">에어 이태리</option><option value="ANK">에어니폰</option><option value="AMR">에어로먹시코</option><option value="JAB">에어바간</option><option value="XTT">에어아시아 인도네시아</option><option value="AAX">에어아시아엑스</option><option value="PRZ">에어파라다이스항공</option><option value="ELY">엘알이스라엘화물항공</option><option value="LGI">엘지상사</option><option value="SUM">엠치에스항공</option><option value="ONA">영남에어</option><option value="OEA">오리엔트타이항공</option><option value="VCX">오션항공</option><option value="OKA">오케이항공</option><option value="YTO">원통화물항공</option><option value="YLL">유 에어라인</option><option value="URI">유스카이항공</option><option value="IRA">이란항공</option><option value="IAE">이르아에로</option><option value="EAE">이스트아시아에어라인</option><option value="MSR">이집트항공</option><option value="JAC">일본에어커뮤터(주)</option><option value="GCO">제미나이화물항공</option><option value="RIT">제스트 항공</option><option value="JAE">제이드화물</option><option value="JTA">제이오션</option><option value="HXA">중국 익스프레스 항공</option><option value="DKH">중국길상항공</option><option value="CBF">중국북방항공</option><option value="CYH">중국운남항공</option><option value="HTT">천진에어카고</option><option value="KZK">카자흐스탄항공</option><option value="QAF">카타르 아미리</option><option value="KAO">카파 고르부노프 항공사</option><option value="KRR">캄보디아 에어웨이즈</option><option value="KEA">코리아익스프레스</option><option value="KSR">코스타항공</option><option value="FAC">콜롬비아 공군</option><option value="KPS">크리스탈타이항공</option><option value="KGA">키르키즈스탄항공</option><option value="SLL">타이 라이언</option><option value="TTW">타이거 에어 타이완</option><option value="TKY">타이스카이항공</option><option value="THT">타히티항공</option><option value="TSP">톤레삽항공</option><option value="TOM">톰슨에어웨이</option><option value="TXC">트랜스아비아엑스포트</option><option value="TDX">트레이드윈즈화물항공</option><option value="TJS">티롤제트서비스</option><option value="PIA">파키스탄항공</option><option value="FCA">퍼스트초이스항공</option><option value="PYP">평창차터</option><option value="FKS">포커스에어</option><option value="POT">폴렛화물항공</option><option value="PBA">피비에어</option><option value="PCA">피씨에어</option><option value="HGG">하이에어</option><option value="HFY">하이플라이</option><option value="KWY">한서우주항공</option><option value="KCG">해양경찰항공대</option><option value="HBH">허베이 항공</option><option value="AHR">홀랜드항공</option><option value="NTH">홋카이도에어시스템</option><option value="HC">훗까이도에어</option> 
+                        </select>
+                       </span></td>
+                      <td> <img src="../../images/bske01.gif" width="12">편&nbsp;&nbsp;명&nbsp;&nbsp;     
+						  <input type="text" name="fp_id" value="" size="15" maxlength="15"> </td>
+					 <td align="right"><a href="javascript:go_search()"><img src="../../images/bske04.gif" width="44" height="19" border="0" align="absmiddle"></a>
+			            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			            </td>
+                      </tr>
+                      
+                    </tbody></table>
+               
+               
+                    <!--------  스케줄검색끝 ////////////-------></td>
+                </tr>
+                <tr>
+                  <td><img src="../../images/recr_table_img03.gif" width="660" height="12"></td>
+                </tr>
+                </tbody></table></td>
+            </tr>
+            <tr>
+              <td><img src="../../images/dot_10.gif" width="10" height="10"></td>
+            </tr>
+            <tr>
+              <td>
+			  <!--------게시판 전체테이블 시작 ------->
+		     
+		     
+		     
+<table width="630" border="0" cellspacing="0" cellpadding="0">
+<tbody><tr>
+	<td><img src="../../images/dot_10.gif" width="10" height="10"></td>
+	<td align="left" id="tb1">총 567 건.</td>
+</tr>
+<tr>
+	<td><img src="../../images/dot_10.gif" width="10" height="10"></td>
+	<td height="33" background="../../images/board_bg_012.gif">
+		<table width="100%" border="0" cellpadding="0" cellspacing="0">
+		<tbody><tr>
+			<td width="120" align="center"><strong>항공사</strong></td>
+			<td width="2" align="center"><img src="../../images/bg_line.gif" width="2" height="33"></td>
+			<td width="92" align="center"><strong>편명</strong></td>
+			<td width="2" align="center"><img src="../../images/bg_line.gif" width="2" height="33"></td>
+			<td width="130" align="center" id="td_target"><strong>출발지</strong></td>
+			<td width="2" align="center"><strong><img src="../../images/bg_line.gif" width="2" height="33"></strong></td>
+			<td width="50" align="center"><strong>계획</strong></td>
+			<td width="2" align="center"><strong><img src="../../images/bg_line.gif" width="2" height="33"></strong></td>
+			<td width="50" align="center"><strong>예상</strong></td>
+			<td width="2" align="center"><strong><img src="../../images/bg_line.gif" width="2" height="33"></strong></td>
+			<td width="50" align="center" id="td_gubun"><strong>도착</strong></td>
+			<td width="2" align="center"><strong><img src="../../images/bg_line.gif" width="2" height="33"></strong></td>
+			<td width="50" align="center"><strong>구분</strong></td>
+			<td width="2" align="center"><strong><img src="../../images/bg_line.gif" width="2" height="33"></strong></td>
+			<td width="50" align="center"><strong>현황</strong></td>
+		</tr>
+		</tbody></table>
+	</td>
+</tr>
+</tbody></table>
+		     
+				<iframe name="sframe" src="/life/airinfo/RbHanList.jsp" width="660" height="390" frameborder="0"></iframe>		         
+				
+				<!--------게시판 전체테이블 끝 ------->
+			  </td>
+            </tr>
+          </tbody></table>
+      </td></tr>
+     
+</tbody></table>
